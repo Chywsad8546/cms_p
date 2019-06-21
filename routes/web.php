@@ -21,5 +21,12 @@ Route::get('/', function () {
 //登录
 Route::get('/cms/userLogin', 'UserController@userLogin');
 
+//注册
+Route::post('/cms/userRegister', 'UserController@userRegister');
+
 //获取新闻管理列表
 Route::get('/cms/getSysMenuList', 'SysMenu@getSysMenuList');
+
+//添加新闻
+Route::post('/cms/addSysMenu', 'SysMenu@addSysgetSysMenuListMenu');
+

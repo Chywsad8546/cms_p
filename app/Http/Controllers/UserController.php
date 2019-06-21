@@ -31,4 +31,12 @@ class UserController extends Controller
         );
         return  json_encode($arr);
     }
+
+
+    public function userRegister(Request $request)
+    {
+        $model=new \App\Http\Model\UserService();
+        $data = $model -> userRegister($request);
+        return $data;
+    }
 }

@@ -15,4 +15,12 @@ class SysMenu extends Controller
       /*  return  json_encode($data,JSON_UNESCAPED_UNICODE);*/
         return  $data;
     }
+
+    public function addSysMenu(Request $request)
+    {
+        $model=new \App\Http\Model\SysMenuService();
+        $data = $model -> addSysMenu($request);
+        return $data;
+    }
+
 }
